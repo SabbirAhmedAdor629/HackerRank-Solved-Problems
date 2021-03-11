@@ -1,0 +1,13 @@
+a = list(map(int, input().rstrip().split()))
+b = list(map(int, input().rstrip().split()))
+d = 0
+e = 0
+for i in range(3):
+    if a[i]>b[i]:
+        d+=1
+    if a[i]<b[i]:
+        e+=1
+    else:
+        pass
+
+print(d,e)
