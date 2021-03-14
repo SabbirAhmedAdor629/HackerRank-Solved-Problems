@@ -1,0 +1,24 @@
+n = int(input().strip())
+
+arr = []
+
+for _ in range(n):
+    arr.append(list(map(int, input().rstrip().split())))
+
+i=0
+j=0
+sum1=0
+sum2=0
+while(i<len(arr)):
+    sum1 = sum1 + arr[i][j]
+    i+=1
+    j+=1
+
+k=0
+j=len(arr)-1
+while (k<len(arr)):
+    sum2 = sum2+arr[k][j]
+    k+=1
+    j-=1
+
+print(abs(sum1-sum2))
