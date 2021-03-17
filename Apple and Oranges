@@ -1,0 +1,35 @@
+
+st = input().split()
+
+s = int(st[0])
+
+t = int(st[1])
+
+ab = input().split()
+
+a = int(ab[0])
+
+b = int(ab[1])
+
+mn = input().split()
+
+m = int(mn[0])
+
+n = int(mn[1])
+
+apples = list(map(int, input().rstrip().split()))
+
+oranges = list(map(int, input().rstrip().split()))
+
+ap, orr = 0,0
+
+for i in apples:
+    if(i+a)>=s and (i+a)<=t:
+        ap += 1
+    
+for j in oranges:
+    if(j+b)>=s and (j+b)<=t:
+        orr +=1
+        
+print(ap)
+print(orr)
