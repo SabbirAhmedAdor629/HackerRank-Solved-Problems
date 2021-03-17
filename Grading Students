@@ -1,0 +1,22 @@
+
+grades_count = int(input().strip())
+
+grades = []
+
+for a in range(grades_count):
+    grades_item = int(input().strip())
+    grades.append(grades_item)
+
+
+for i in grades:
+    if i<38:
+        print(i)
+    else:
+        if i%5==0:
+            print(i)
+        elif (i+1)%5==0:
+            print(i+1)
+        elif (i+2)%5==0:
+            print(i+2)
+        else:
+            print(i)
